@@ -1,5 +1,16 @@
 # PHP Version of Mini-classroom
 
+<div align="center">
+
+![EOS](https://res.cloudinary.com/iambeejayayo/image/upload/v1554240066/brand-logo.png)
+
+<br>
+
+</div>
+
+# To view this PHP Version of the Mini-Classroom App
+- Visit [Kazeem Mini-classroom](http://codavengers.000webhostapp.com/mini-classroom)
+
 - This is the PHP Version of the mini-classroom task we did at HNG Internship 6.0. The original version was developed by @ibeFX with the use of Node.js but this PHP Version is created by @Kazeem Asifat.
 
 - PS: The U.I is a bad, i focused on the functionalities of the app so that is what you should look out for and not the beauty.
