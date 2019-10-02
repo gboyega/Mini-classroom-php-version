@@ -1,48 +1,16 @@
-<?php    
-  include 'lib/Session.php';
-  Session::checkStudentLogin();
-
-  spl_autoload_register(function($class){
-    include_once "classes/".$class.".php";
-  });
-
-  $student = new Student();
+<?php 
+  include 'inc/student-header.php';
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-<title>Sign Up as student</title>
-<link rel="stylesheet" href="css/sign up.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="Mini-class App designs/mathisi logo.png" type="image/png">
 
-<style type="text/css">
-  .success {
-    background: green;
-    color: white;
-    padding: 10px;
-    z-index: 30;
-    width: 100%;
-    margin: 10px auto;
-  }
-  .error {
-    background: red;
-    color: white;
-    padding: 10px;
-    z-index: 30;
-    width: 100%;
-    margin: 10px auto;
-  }
-</style>
-</head>
-<body>
-    <div class="container">
+  <div class="background">
+
+    </div>
+    <div class="register-container">
         
         <div class="orangeBox"></div>
         <div class="formContainer">
-                <a href="index.html"><img class="logo" src="Mini-class App designs/Logo.svg" alt=""></a>
-                <h1> Sign up as a student </h1>
+           <h1> Sign up as a student </h1>
             
             <?php
                 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
@@ -72,5 +40,6 @@
         </div>
         
     </div>
-
+<script src="js/main.js"></script>
 </body>
+</html>
