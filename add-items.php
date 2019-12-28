@@ -114,6 +114,8 @@
                                 <button name="submit" class="add-btn">Add Item</button>
                             </div>
                         </form>
+                        <!-- Back button -->
+                        <!-- <a href="create-class.php" class="add-btn"><< Back</a> -->
                     </div>
                 </div>
                 <div class="line"></div>

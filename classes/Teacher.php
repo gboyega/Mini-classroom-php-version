@@ -28,12 +28,12 @@
 
 			// if any field is empty
 			if(empty($cleanName) || empty($cleanEmail) || empty($cleanPassword)) {
-				$signupMsg = "<div class='error'>Please fill all fields!</div>";
+				$signupMsg = "<div class='alert-danger' role='alert'>Please fill all fields!</div>";
 				return $signupMsg;
 			} 
 
 			if (!filter_var($cleanEmail, FILTER_VALIDATE_EMAIL)) {
-				$signupMsg = "<div class='error'>Invalid Email!</div>";
+				$signupMsg = "<div class='alert-danger' role='alert'>Invalid Email!</div>";
 				return $signupMsg;
 			}
 			
@@ -41,7 +41,7 @@
 			$checkEmail = "SELECT * FROM tbl_teacher WHERE email = '$cleanEmail' LIMIT 1";
 			$mailChk = $this->db->select($checkEmail);
 			if ($mailChk != false) {
-				$msg = "<div class='error'>Email Already Exist.</div>";
+				$msg = "<div class='alert-danger' role='alert'>Email Already Exist.</div>";
 				return $msg;
 			}
 			else {
@@ -52,11 +52,11 @@
 
 		  		// if data is inserted
 				if ($inserted_row){
-					$msg = "<div class='success'>Registration Successful! Please click the Log In below to sign in!</div>";
+					$msg = "<div class='alert-success' role='alert'>Registration Successful! Please click the Log In below to sign in!</div>";
 					return $msg;
 				}
 				else {
-					$msg = "<div class='error'>Registration Not Successful!</div>";
+					$msg = "<div class='alert-danger' role='alert'>Registration Not Successful!</div>";
 					return $msg;
 				}
 			}
@@ -71,12 +71,12 @@
 
 			// If details are empty
 			if(empty($cleanEmail) || empty($cleanPassword)) {
-				$loginmsg = "<div class='error'>Email or Password must not be empty</div>";
+				$loginmsg = "<div class='alert-danger' role='alert'>Email or Password must not be empty</div>";
 				return $loginmsg;
 			}
 			// if email is wrong
 			elseif (!filter_var($cleanEmail, FILTER_VALIDATE_EMAIL)){
-				$signupMsg = "<div class='error'>Invalid Email!</div>";
+				$signupMsg = "<div class='alert-danger' role='alert'>Invalid Email!</div>";
 				return $signupMsg;
 			}
 			else {
@@ -93,7 +93,7 @@
 					header("Location: create-class.php");
 				}
 				else {
-					$loginmsg = "<div class='error'>Email or Password Incorrect!</div>";
+					$loginmsg = "<div class='alert-danger' role='alert'>Email or Password Incorrect!</div>";
 					return $loginmsg;
 				}
 			}

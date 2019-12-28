@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("../Mini-class\ App\ designs/background.png");
+    background-image: url("/images/background.png");
     background-size: cover;
     background-position: top top;
     height: 95vh;
@@ -51,7 +51,7 @@ header {
     padding: 9px 40px;
     border-radius: 30px;
     margin-top: 30px;
-    
+    cursor: pointer;
 }
 
 .content-img {

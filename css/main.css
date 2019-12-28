@@ -74,28 +74,20 @@ a~img {
 
 .alert-danger{
 text-align: center;
-border: red solid 2px;
 background: red;
-height: 40px;
-width: 50%;
 margin: auto;
 color: white;
-/* vertical-align: middle; */
-/* align-items: center; */
-font-size: 1.5rem;
-border-radius: 20px
+font-size: 1.3rem;
+border-radius: 5px;
+padding: 10px;
 }
 
 .alert-success{
 text-align: center;
-border: greenyellow solid 2px;
 background: greenyellow;
-height: 40px;
-width: 50%;
 margin: auto;
 color: white;
-/* vertical-align: middle; */
-/* align-items: center; */
-font-size: 1.5rem;
-border-radius: 20px
+font-size: 1.3rem;
+border-radius: 5px;
+padding: 10px;
 }
